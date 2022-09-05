@@ -3,15 +3,8 @@ import CreateDropButton from '@components/CreateDropButton'
 import { useCreateDrop } from '@providers/CreateDropProvider'
 
 const CreateForm = () => {
-  const {
-    lengthOfDrop,
-    setLengthOfDrop,
-    setMusicMetadata,
-    publicSalePrice,
-    setPublicSalePrice,
-    fundsRecipient,
-    setFundsRecipient,
-  } = useCreateDrop()
+  const { setContractMetadata, setMusicMetadata, fundsRecipient, setFundsRecipient } =
+    useCreateDrop()
 
   return (
     <Box
@@ -30,23 +23,10 @@ const CreateForm = () => {
         }}
       />
       <Input
-        placeholder={lengthOfDrop}
-        type="number"
-        label="number of days for drop"
-        min={0}
-        step={1}
+        placeholder="ipfs://"
+        label="contract metadata"
         onChange={(e) => {
-          setLengthOfDrop(e.target.value)
-        }}
-      />
-      <Input
-        placeholder={publicSalePrice}
-        type="number"
-        label="price (wei)"
-        min={0}
-        step={1}
-        onChange={(e) => {
-          setPublicSalePrice(e.target.value)
+          setContractMetadata(e.target.value)
         }}
       />
       <Input

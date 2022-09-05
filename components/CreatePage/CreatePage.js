@@ -12,7 +12,7 @@ const CreatePage = () => (
       alignItems="center"
       justifyContent="space-between"
     >
-      <Text>Wura, A Narrative</Text>
+      <Text>Reflejo</Text>
       <ConnectButton />
     </Box>
     <CreateForm />

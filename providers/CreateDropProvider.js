@@ -18,11 +18,11 @@ export const CreateDropProvider = ({ children }) => {
   const [contractMetadata, setContractMetadata] = useState(
     'ipfs://bafkreif67d4hefyr5klirohzqnbed4ntgmjk6yjo2jdsnm7irrempwbxjm'
   )
-  const [editionSize, setEditionSize] = useState(150)
+  const [editionSize, setEditionSize] = useState(22)
   const [royaltyBps, setRoyaltyBps] = useState(300)
   const [lengthOfDrop, setLengthOfDrop] = useState(31)
   const [fundsRecipient, setFundsRecipient] = useState(account?.address)
-  const [publicSalePrice, setPublicSalePrice] = useState('22200000000000000')
+  const [publicSalePrice, setPublicSalePrice] = useState('222000000000000000')
   const [maxSalePurchasePerAddress, setMaxSalePurchasePerAddress] = useState(0)
   const [publicSaleStart, setPublicSaleStart] = useState(Math.round(Date.now() / 1000))
   const [publicSaleEnd, setPublicSaleEnd] = useState(publicSaleStart + 60 * 60 * 24 * 31)
